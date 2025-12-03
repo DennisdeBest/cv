@@ -43,8 +43,6 @@
             position: relative;
         }
 
-        /* Header / controls */
-
         .top-bar {
             display: flex;
             justify-content: space-between;
@@ -88,8 +86,6 @@
             color: #fff;
         }
 
-        /* CV header */
-
         .cv-header {
             display: grid;
             grid-template-columns: auto 1fr;
@@ -119,6 +115,14 @@
         .avatar span {
             letter-spacing: 0.08em;
         }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
 
         .headline {
             display: flex;
@@ -175,8 +179,6 @@
         .meta a:hover {
             text-decoration: underline;
         }
-
-        /* Layout */
 
         .content {
             display: grid;
@@ -246,8 +248,6 @@
             margin-bottom: 2px;
         }
 
-        /* Language switching */
-
         .cv-lang {
             display: none;
         }
@@ -255,8 +255,6 @@
         .cv-lang.active {
             display: block;
         }
-
-        /* Print styles */
 
         @media print {
             body {
@@ -282,8 +280,6 @@
             }
         }
 
-        /* Responsive */
-
         @media (max-width: 800px) {
             .content {
                 grid-template-columns: 1fr;
@@ -300,9 +296,6 @@
 <body>
 <div class="page">
     <div class="top-bar">
-        <div style="font-size:11px; color:var(--muted);">
-            Dennis de Best — CV
-        </div>
         <div class="controls">
             <button id="btn-fr" aria-pressed="true">FR</button>
             <button id="btn-en" aria-pressed="false">EN</button>
@@ -310,18 +303,16 @@
         </div>
     </div>
 
-    <!-- FRENCH CV -->
     <div id="cv-fr" class="cv-lang active">
         <header class="cv-header">
             <div class="avatar">
-                <!-- Replace initials with an <img> if you want a real photo -->
-                <span>DD</span>
+                <img src="me.jpeg" alt="Portrait of Dennis de Best">
             </div>
             <div class="headline">
                 <div class="headline-top">
                     <div>
                         <div class="name">Dennis de Best</div>
-                        <div class="title">Développeur Backend / Ingénieur DevOps</div>
+                        <div class="title">Développeur Backend / Lead Technique</div>
                     </div>
                 </div>
                 <div class="meta">
@@ -338,7 +329,10 @@
                 <section class="section">
                     <h2>Profil</h2>
                     <p class="summary-text">
-                        Développeur backend et ingénieur DevOps avec plus de 8 ans d’expérience dans la création de plateformes fiables, l’automatisation d’infrastructures et l’amélioration des pratiques techniques. Spécialisé en Symfony, Kubernetes/K3S, GitOps et CI/CD, avec des expériences variées allant de petites équipes SaaS à des environnements grands comptes. J’apprécie accompagner les développeurs juniors, structurer les projets et faire le lien entre développement et opérations.
+                        Développeur backend avec plus de 8 ans d’expérience dans la conception d’applications web, le développement de fonctionnalités complexes et la mise en place d’architectures robustes. Spécialisé en PHP/Symfony et APIs REST/SOAP, j’ai également travaillé avec des stacks frontend modernes (Vue.js, Angular) et j’aime intervenir sur l’ensemble du cycle de vie d’une application.
+                    </p>
+                    <p class="summary-text">
+                        Je possède une solide expérience DevOps (Docker, Kubernetes, CI/CD) que j’utilise principalement pour améliorer la productivité des équipes de développement et fiabiliser les déploiements. J’apprécie accompagner les développeurs juniors, structurer les projets et faire le lien entre besoins métier et décisions techniques.
                     </p>
                 </section>
 
@@ -346,15 +340,14 @@
                     <h2>Expérience</h2>
 
                     <div class="experience-item">
-                        <div class="job-title">Consultant Back-End / DevOps — umake</div>
+                        <div class="job-title">Consultant Back-End / Lead Developer — umake</div>
                         <div class="job-meta">2024 – Aujourd’hui · Bordeaux, France</div>
                         <p class="tagline">Missions pour un grand groupe télécom, une plateforme SaaS et une plateforme B2B.</p>
                         <ul>
-                            <li>Mise en place de workflows GitOps pour des environnements Kubernetes sécurisés.</li>
-                            <li>Standardisation des processus de déploiement et création de templates CI/CD.</li>
-                            <li>Conception de pipelines GitLab CI/CD pour microservices.</li>
-                            <li>Création d’images Docker et de charts Helm pour des déploiements multi-environnements.</li>
-                            <li>Déploiement automatisé de clusters K3S via Ansible et uniformisation des environnements.</li>
+                            <li>Participation à la conception et au développement d’APIs et de services backend (PHP/Symfony) dans des contextes à forts enjeux.</li>
+                            <li>Standardisation des bonnes pratiques de code (revues, qualité, tests) et accompagnement des équipes sur la partie backend.</li>
+                            <li>Création et intégration d’outils internes pour faciliter le travail des développeurs (scripts, automatisations, templates de projets).</li>
+                            <li>Support DevOps : conteneurisation des applications, mise en place et évolution des pipelines CI/CD, intégration dans des environnements Kubernetes existants.</li>
                         </ul>
                     </div>
 
@@ -362,11 +355,12 @@
                         <div class="job-title">Managing Partner / Lead Backend &amp; DevOps — Codebuds</div>
                         <div class="job-meta">2019 – 2025 · Bordeaux, France</div>
                         <ul>
-                            <li>Encadrement et montée en compétence de développeurs backend/DevOps.</li>
-                            <li>Définition d’architectures, découpage technique et gestion de la relation client.</li>
-                            <li>Développement Symfony et Go, optimisation des performances et automatisation.</li>
-                            <li>Mise en place d’infrastructures Kubernetes, pipelines CI/CD et environnements Docker.</li>
-                            <li>Migration d’un monolithe vers des microservices AWS et déploiement d’un cluster Kubernetes bare-metal pour un SaaS B2B on-premise.</li>
+                            <li>Conception et développement d’applications web en PHP/Symfony (APIs, back-office, intégrations externes).</li>
+                            <li>Collaboration avec des équipes frontend (Vue.js, Angular) pour définir des APIs claires et des contrats stables.</li>
+                            <li>Encadrement de développeurs backend/DevOps : pair programming, revues de code, partage de bonnes pratiques.</li>
+                            <li>Définition d’architectures et de roadmaps techniques à partir des besoins clients.</li>
+                            <li>Mise en place d’environnements de développement et d’intégration continue (Docker, Kubernetes, GitLab CI/CD) pour fiabiliser les livraisons.</li>
+                            <li>Projets marquants : migration d’un monolithe e-commerce vers une architecture plus modulaire sur AWS, déploiement d’un SaaS B2B on-premise avec forte exigence de stabilité.</li>
                         </ul>
                     </div>
 
@@ -374,8 +368,9 @@
                         <div class="job-title">Développeur Web — Kaizen Developments</div>
                         <div class="job-meta">2017 – 2019 · Bordeaux, France</div>
                         <ul>
-                            <li>Développement d’une application Symfony complète.</li>
-                            <li>Introduction de Docker pour unifier les environnements de développement.</li>
+                            <li>Développement d’une application web complète en Symfony (backend, modèle de données, intégration).</li>
+                            <li>Travail étroit avec le frontend pour livrer des fonctionnalités cohérentes côté UI/UX.</li>
+                            <li>Introduction de Docker pour homogénéiser les environnements de développement.</li>
                         </ul>
                     </div>
                 </section>
@@ -385,12 +380,12 @@
                 <section class="section">
                     <h2>Compétences</h2>
                     <div class="two-col-list">
-                        <p><strong>Backend :</strong> PHP 8, Symfony 6/7, APIs REST/SOAP, SQL, Redis</p>
-                        <p><strong>DevOps :</strong> Docker, Kubernetes (K3S/RKE2), Helm, Helmfile, GitOps (ArgoCD), SOPS</p>
-                        <p><strong>CI/CD :</strong> GitLab CI/CD, Bitbucket Pipelines</p>
-                        <p><strong>Infra &amp; Cloud :</strong> Linux, Terraform, Ansible, AWS (Fargate, Lambda, S3, RDS)</p>
-                        <p><strong>Monitoring :</strong> Prometheus, Grafana</p>
-                        <p><strong>Autres :</strong> mentoring, enseignement, documentation technique</p>
+                        <p><strong>Backend :</strong> PHP 8, Symfony 5/6/7, API Platform, APIs REST/SOAP, SQL, Doctrine, optimisation requêtes</p>
+                        <p><strong>Frontend :</strong> Vue.js, notions d’Angular, intégration, TailwindCSS/SCSS</p>
+                        <p><strong>Architecture :</strong> conception d’APIs, structuration de projets, bonnes pratiques, revues de code</p>
+                        <p><strong>DevOps (support dev) :</strong> Docker, Docker Compose, Kubernetes/K3S, GitLab CI/CD, Bitbucket Pipelines, Helm, Ansible</p>
+                        <p><strong>Qualité &amp; équipe :</strong> mentoring, formation, documentation technique, ateliers internes</p>
+                        <p><strong>Outils :</strong> GitLab, GitHub, Bitbucket, Jira, Confluence, Linux (Debian/Ubuntu)</p>
                     </div>
                 </section>
 
@@ -413,18 +408,17 @@
         </div>
     </div>
 
-    <!-- ENGLISH CV -->
+    <!-- ENGLISH CV (DEV-FOCUSED) -->
     <div id="cv-en" class="cv-lang">
         <header class="cv-header">
             <div class="avatar">
-                <!-- Replace initials with an <img> if you want a real photo -->
                 <span>DD</span>
             </div>
             <div class="headline">
                 <div class="headline-top">
                     <div>
                         <div class="name">Dennis de Best</div>
-                        <div class="title">Backend Developer / DevOps Engineer</div>
+                        <div class="title">Backend Developer / Tech Lead</div>
                     </div>
                 </div>
                 <div class="meta">
@@ -441,7 +435,10 @@
                 <section class="section">
                     <h2>Summary</h2>
                     <p class="summary-text">
-                        Backend developer and DevOps engineer with 8+ years of experience building reliable platforms, automating infrastructure, and improving engineering practices. Specialised in Symfony, Kubernetes/K3S, GitOps and CI/CD, with experience ranging from small SaaS teams to large enterprise environments. Enjoy mentoring junior developers, structuring projects, and bridging development and operations.
+                        Backend developer with 8+ years of experience designing web applications, implementing complex features and building robust architectures. Specialised in PHP/Symfony and REST/SOAP APIs, with hands-on exposure to modern frontend stacks (Vue.js, Angular). I enjoy working across the full lifecycle of an application, from design to delivery.
+                    </p>
+                    <p class="summary-text">
+                        I also have strong DevOps skills (Docker, Kubernetes, CI/CD) that I use mainly to improve developer productivity and make deployments more reliable. I like mentoring junior engineers, structuring projects and aligning technical decisions with business needs.
                     </p>
                 </section>
 
@@ -449,15 +446,14 @@
                     <h2>Experience</h2>
 
                     <div class="experience-item">
-                        <div class="job-title">Backend / DevOps Consultant — umake</div>
+                        <div class="job-title">Backend / Lead Developer — umake</div>
                         <div class="job-meta">2024 – Present · Bordeaux, France</div>
                         <p class="tagline">Missions for a large telecom client, a SaaS platform and a B2B platform.</p>
                         <ul>
-                            <li>Implemented GitOps workflows for secure Kubernetes environments.</li>
-                            <li>Standardised deployment processes and created CI/CD templates.</li>
-                            <li>Designed and optimised GitLab CI/CD pipelines for microservices.</li>
-                            <li>Built Docker images and Helm charts for multi-environment deployments.</li>
-                            <li>Automated K3S cluster deployments using Ansible and unified environments.</li>
+                            <li>Contributed to the design and development of backend services and internal APIs (PHP/Symfony) in high-stakes environments.</li>
+                            <li>Standardised coding practices (reviews, quality, tests) and supported teams on backend topics.</li>
+                            <li>Built and integrated internal tools to streamline developer workflows (scripts, automation, project templates).</li>
+                            <li>DevOps support: containerised applications, maintained and improved CI/CD pipelines, integrated projects into existing Kubernetes environments.</li>
                         </ul>
                     </div>
 
@@ -465,11 +461,12 @@
                         <div class="job-title">Managing Partner / Lead Backend &amp; DevOps — Codebuds</div>
                         <div class="job-meta">2019 – 2025 · Bordeaux, France</div>
                         <ul>
-                            <li>Mentored backend/DevOps developers and defined technical best practices.</li>
-                            <li>Owned architecture design, technical planning and client communication.</li>
-                            <li>Developed Symfony and Go services, focusing on performance and reliability.</li>
-                            <li>Set up Kubernetes infrastructure, CI/CD pipelines and automated environments.</li>
-                            <li>Delivered a monolith-to-microservices migration on AWS and a bare-metal Kubernetes cluster for a B2B on-prem SaaS.</li>
+                            <li>Designed and developed web applications in PHP/Symfony (APIs, back-office, external integrations).</li>
+                            <li>Worked closely with frontend teams (Vue.js, Angular) to define clear API contracts and stable interfaces.</li>
+                            <li>Mentored backend/DevOps developers: pair programming, code reviews, best practice guidance.</li>
+                            <li>Defined architectures and technical roadmaps based on client needs.</li>
+                            <li>Set up development environments and CI/CD pipelines (Docker, Kubernetes, GitLab CI/CD) to secure releases.</li>
+                            <li>Key projects: refactoring a legacy e-commerce monolith towards a more modular architecture on AWS, deploying a B2B on-prem SaaS with high stability requirements.</li>
                         </ul>
                     </div>
 
@@ -477,7 +474,8 @@
                         <div class="job-title">Web Developer — Kaizen Developments</div>
                         <div class="job-meta">2017 – 2019 · Bordeaux, France</div>
                         <ul>
-                            <li>Built a full Symfony web application from scratch.</li>
+                            <li>Developed a full Symfony-based web application (backend, data model, integrations).</li>
+                            <li>Worked closely with frontend to deliver consistent features and UX.</li>
                             <li>Introduced Docker to standardise local development environments.</li>
                         </ul>
                     </div>
@@ -488,12 +486,12 @@
                 <section class="section">
                     <h2>Core Skills</h2>
                     <div class="two-col-list">
-                        <p><strong>Backend:</strong> PHP 8, Symfony 6/7, APIs REST/SOAP, SQL, Redis</p>
-                        <p><strong>DevOps:</strong> Docker, Kubernetes (K3S/RKE2), Helm, Helmfile, GitOps (ArgoCD), SOPS</p>
-                        <p><strong>CI/CD:</strong> GitLab CI/CD, Bitbucket Pipelines</p>
-                        <p><strong>Infra &amp; Cloud:</strong> Linux, Terraform, Ansible, AWS (Fargate, Lambda, S3, RDS)</p>
-                        <p><strong>Monitoring:</strong> Prometheus, Grafana</p>
-                        <p><strong>Other:</strong> mentoring, teaching, technical documentation</p>
+                        <p><strong>Backend:</strong> PHP 8, Symfony 5/6/7, API Platform, REST/SOAP APIs, SQL, Doctrine, query optimisation</p>
+                        <p><strong>Frontend:</strong> Vue.js, basic Angular, integration, TailwindCSS/SCSS</p>
+                        <p><strong>Architecture:</strong> API design, project structure, best practices, code reviews</p>
+                        <p><strong>DevOps (for dev teams):</strong> Docker, Docker Compose, Kubernetes/K3S, GitLab CI/CD, Bitbucket Pipelines, Helm, Ansible</p>
+                        <p><strong>Team & quality:</strong> mentoring, training, technical documentation, internal workshops</p>
+                        <p><strong>Tooling:</strong> GitLab, GitHub, Bitbucket, Jira, Confluence, Linux (Debian/Ubuntu)</p>
                     </div>
                 </section>
 
@@ -507,8 +505,8 @@
                 <section class="section">
                     <h2>Languages</h2>
                     <div class="lang-list">
-                        <span>English — fluent</span>
                         <span>French — fluent</span>
+                        <span>English — fluent</span>
                         <span>Dutch — native</span>
                     </div>
                 </section>
