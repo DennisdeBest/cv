@@ -258,6 +258,10 @@
         }
 
         @media print {
+            html, body {
+                font-size: 12px; /* slightly smaller overall */
+            }
+
             body {
                 padding: 0;
                 background: #fff;
@@ -268,11 +272,36 @@
                 width: 100%;
                 border-radius: 0;
                 box-shadow: none;
-                padding: 10mm 12mm 10mm;
+                padding: 8mm 9mm 8mm; /* tighter padding */
             }
 
             .top-bar {
                 display: none !important;
+            }
+
+            .content {
+                gap: 14px; /* slightly less space between columns */
+            }
+
+            .section {
+                margin-bottom: 9px; /* a bit tighter */
+            }
+
+            .section ul {
+                margin: 2px 0 3px 12px;
+            }
+
+            .section li {
+                margin-bottom: 1px;
+            }
+
+            .name {
+                font-size: 18px; /* a bit smaller in print */
+            }
+
+            h2 {
+                margin-bottom: 4px;
+                padding-bottom: 2px;
             }
 
             @page {
