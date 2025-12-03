@@ -257,9 +257,17 @@
             display: block;
         }
 
+        .inline-columns {
+            /* default: stacked (web) */
+        }
+
+        .inline-columns > div {
+            /* flex set only in print */
+        }
+
         @media print {
             html, body {
-                font-size: 12px; /* slightly smaller overall */
+                font-size: 12px;
             }
 
             body {
@@ -272,7 +280,7 @@
                 width: 100%;
                 border-radius: 0;
                 box-shadow: none;
-                padding: 8mm 9mm 8mm; /* tighter padding */
+                padding: 8mm 9mm 8mm;
             }
 
             .top-bar {
@@ -280,11 +288,11 @@
             }
 
             .content {
-                gap: 14px; /* slightly less space between columns */
+                gap: 14px;
             }
 
             .section {
-                margin-bottom: 9px; /* a bit tighter */
+                margin-bottom: 9px;
             }
 
             .section ul {
@@ -296,12 +304,21 @@
             }
 
             .name {
-                font-size: 18px; /* a bit smaller in print */
+                font-size: 18px;
             }
 
             h2 {
                 margin-bottom: 4px;
                 padding-bottom: 2px;
+            }
+
+            .inline-columns {
+                display: flex;
+                gap: 16px;
+            }
+
+            .inline-columns > div {
+                flex: 1;
             }
 
             @page {
@@ -310,7 +327,6 @@
             }
         }
 
-        /* Mobile tweaks */
         @media (max-width: 800px) {
             body {
                 padding: 8px;
@@ -368,6 +384,7 @@
         </div>
     </div>
 
+    <!-- FR CV -->
     <div id="cv-fr" class="cv-lang active">
         <header class="cv-header">
             <div class="avatar">
@@ -394,10 +411,7 @@
                 <section class="section">
                     <h2>Profil</h2>
                     <p class="summary-text">
-                        Développeur backend avec plus de 8 ans d’expérience dans la conception d’applications web, le développement de fonctionnalités complexes et la mise en place d’architectures robustes. Spécialisé en PHP/Symfony et APIs REST/SOAP, j’ai également travaillé avec des stacks frontend modernes (Vue.js, Angular) et j’aime intervenir sur l’ensemble du cycle de vie d’une application.
-                    </p>
-                    <p class="summary-text">
-                        Je possède une solide expérience DevOps (Docker, Kubernetes, CI/CD) que j’utilise principalement pour améliorer la productivité des équipes de développement et fiabiliser les déploiements. J’apprécie accompagner les développeurs juniors, structurer les projets et faire le lien entre besoins métier et décisions techniques.
+                        Développeur backend et lead technique avec plus de <strong>8 ans</strong> d’expérience. J’ai posé les fondations techniques d’une agence (stack, outils, standards), structuré les process de delivery sur <strong>10+ projets clients</strong> et accompagné plusieurs alternants et développeurs juniors jusqu’à leur autonomie. Je m’appuie sur une solide culture DevOps (Docker, Kubernetes, CI/CD) pour rendre les équipes plus efficaces et fiabiliser les mises en production.
                     </p>
                 </section>
 
@@ -409,10 +423,11 @@
                         <div class="job-meta">2024 – Aujourd’hui · Bordeaux, France</div>
                         <p class="tagline">Missions pour un grand groupe télécom, une plateforme SaaS et une plateforme B2B.</p>
                         <ul>
-                            <li>Participation à la conception et au développement d’APIs et de services backend (PHP/Symfony) dans des contextes à forts enjeux.</li>
-                            <li>Standardisation des bonnes pratiques de code (revues, qualité, tests) et accompagnement des équipes sur la partie backend.</li>
-                            <li>Création et intégration d’outils internes pour faciliter le travail des développeurs (scripts, automatisations, templates de projets).</li>
-                            <li>Support DevOps : conteneurisation des applications, mise en place et évolution des pipelines CI/CD, intégration dans des environnements Kubernetes existants.</li>
+                            <li>Conception et développement de services backend (PHP/Symfony) pour <strong>3 projets stratégiques</strong> (télécom, SaaS B2B, plateforme interne).</li>
+                            <li>Évolution des pipelines CI/CD (GitLab CI/CD) avec des déploiements automatisés en <strong>moins d’une minute</strong> sur certains services.</li>
+                            <li>Standardisation des bonnes pratiques via revues de code régulières, modèles de projets et documentation partagée entre les équipes.</li>
+                            <li>Création d’outils internes (scripts, images Docker, générateurs de configuration) et support DevOps ciblé (conteneurisation, intégration Kubernetes, multi-environnements).</li>
+                            <li>Pour une plateforme B2B d’un groupement de distributeurs, mise en place d’une chaîne de déploiement Kubernetes avec mises à jour automatisées et zéro interruption, réduisant les temps d’arrêt liés aux déploiements d’environ <strong>80&nbsp;%</strong>.</li>
                         </ul>
                     </div>
 
@@ -420,12 +435,12 @@
                         <div class="job-title">Managing Partner / Lead Backend &amp; DevOps — Codebuds</div>
                         <div class="job-meta">2019 – 2025 · Bordeaux, France</div>
                         <ul>
-                            <li>Conception et développement d’applications web en PHP/Symfony (APIs, back-office, intégrations externes).</li>
-                            <li>Collaboration avec des équipes frontend (Vue.js, Angular) pour définir des APIs claires et des contrats stables.</li>
-                            <li>Encadrement de développeurs backend/DevOps : pair programming, revues de code, partage de bonnes pratiques.</li>
-                            <li>Définition d’architectures et de roadmaps techniques à partir des besoins clients.</li>
-                            <li>Mise en place d’environnements de développement et d’intégration continue (Docker, Kubernetes, GitLab CI/CD) pour fiabiliser les livraisons.</li>
-                            <li>Projets marquants : migration d’un monolithe e-commerce vers une architecture plus modulaire sur AWS, déploiement d’un SaaS B2B on-premise avec forte exigence de stabilité.</li>
+                            <li>Co-fondateur et référent technique, ayant construit et fait évoluer les bases techniques (stack, outils, CI/CD, standards) pendant <strong>5 ans</strong>.</li>
+                            <li>Pilotage technique de <strong>10+ projets clients</strong> (B2B, B2C, SaaS), avec un rôle clé sur l’architecture backend, la qualité et la fiabilité des livraisons.</li>
+                            <li>Développement et maintenance de backends Symfony, intégration de services tiers (paiement, CRM, messaging, automatisation) et optimisation des performances.</li>
+                            <li>Mise en place d’environnements Docker homogènes et de pipelines CI/CD complets (dev → staging → prod), réduisant fortement les retours de production.</li>
+                            <li>Encadrement d’alternants et développeurs juniors (pair programming, revues de code, ateliers techniques) et contribution à la croissance de l’équipe jusqu’à <strong>9 personnes</strong>.</li>
+                            <li>Enseignement de <strong>Docker, Linux et Kubernetes</strong> à plus de <strong>400 étudiants</strong> dans plusieurs écoles, participation à des projets générant plus de <strong>400k€ de chiffre d’affaires annuel</strong>.</li>
                         </ul>
                     </div>
 
@@ -433,9 +448,9 @@
                         <div class="job-title">Développeur Web — Kaizen Developments</div>
                         <div class="job-meta">2017 – 2019 · Bordeaux, France</div>
                         <ul>
-                            <li>Développement d’une application web complète en Symfony (backend, modèle de données, intégration).</li>
-                            <li>Travail étroit avec le frontend pour livrer des fonctionnalités cohérentes côté UI/UX.</li>
-                            <li>Introduction de Docker pour homogénéiser les environnements de développement.</li>
+                            <li>Développement d’une application métier complète en Symfony (modèle de données, logique métier, APIs internes) utilisée quotidiennement par les équipes clientes.</li>
+                            <li>Collaboration avec le frontend pour définir les contrats d’API et livrer des fonctionnalités cohérentes côté UI/UX.</li>
+                            <li>Introduction de Docker et amélioration progressive de la base de code (refactoring ciblé, optimisation de requêtes SQL lourdes).</li>
                         </ul>
                     </div>
                 </section>
@@ -455,25 +470,28 @@
                 </section>
 
                 <section class="section">
-                    <h2>Formation</h2>
-                    <p><strong>Ingésup (Ynov)</strong> — Expert Informatique (2015–2019)</p>
-                    <p><strong>SUPINFO</strong> — Informatique (2014–2015)</p>
-                    <p><strong>Open Universiteit Amsterdam</strong> — Technologies de l’information (2012–2014)</p>
-                </section>
-
-                <section class="section">
-                    <h2>Langues</h2>
-                    <div class="lang-list">
-                        <span>Français — courant</span>
-                        <span>Anglais — courant</span>
-                        <span>Néerlandais — natif</span>
+                    <div class="inline-columns">
+                        <div>
+                            <h2>Formation</h2>
+                            <p><strong>Ingésup (Ynov)</strong> — Expert Informatique (2015–2019)</p>
+                            <p><strong>SUPINFO</strong> — Informatique (2014–2015)</p>
+                            <p><strong>Open Universiteit Amsterdam</strong> — Technologies de l’information (2012–2014)</p>
+                        </div>
+                        <div>
+                            <h2>Langues</h2>
+                            <div class="lang-list">
+                                <span>Français — courant</span>
+                                <span>Anglais — courant</span>
+                                <span>Néerlandais — natif</span>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
         </div>
     </div>
 
-    <!-- ENGLISH CV (DEV-FOCUSED) -->
+    <!-- EN CV -->
     <div id="cv-en" class="cv-lang">
         <header class="cv-header">
             <div class="avatar">
@@ -500,10 +518,7 @@
                 <section class="section">
                     <h2>Summary</h2>
                     <p class="summary-text">
-                        Backend developer with 8+ years of experience designing web applications, implementing complex features and building robust architectures. Specialised in PHP/Symfony and REST/SOAP APIs, with hands-on exposure to modern frontend stacks (Vue.js, Angular). I enjoy working across the full lifecycle of an application, from design to delivery.
-                    </p>
-                    <p class="summary-text">
-                        I also have strong DevOps skills (Docker, Kubernetes, CI/CD) that I use mainly to improve developer productivity and make deployments more reliable. I like mentoring junior engineers, structuring projects and aligning technical decisions with business needs.
+                        Backend developer and tech lead with <strong>8+ years</strong> of experience. I’ve built technical foundations for an agency (stack, tooling, standards), shaped delivery processes across <strong>10+ client projects</strong> and mentored apprentices and junior developers to autonomy. Strong DevOps background (Docker, Kubernetes, CI/CD) used to help teams ship faster with fewer surprises in production.
                     </p>
                 </section>
 
@@ -515,10 +530,11 @@
                         <div class="job-meta">2024 – Present · Bordeaux, France</div>
                         <p class="tagline">Missions for a large telecom client, a SaaS platform and a B2B platform.</p>
                         <ul>
-                            <li>Contributed to the design and development of backend services and internal APIs (PHP/Symfony) in high-stakes environments.</li>
-                            <li>Standardised coding practices (reviews, quality, tests) and supported teams on backend topics.</li>
-                            <li>Built and integrated internal tools to streamline developer workflows (scripts, automation, project templates).</li>
-                            <li>DevOps support: containerised applications, maintained and improved CI/CD pipelines, integrated projects into existing Kubernetes environments.</li>
+                            <li>Designed and delivered backend services (PHP/Symfony) for <strong>3 key projects</strong> (telecom, B2B SaaS, internal platform).</li>
+                            <li>Improved GitLab CI/CD pipelines, achieving automated deployments in <strong>under one minute</strong> for some services.</li>
+                            <li>Drove common coding standards with weekly reviews, project templates and shared documentation across product teams.</li>
+                            <li>Built internal tools (scripts, Docker images, config generators) and provided targeted DevOps support (containerisation, Kubernetes integration, multi-environment config).</li>
+                            <li>For a B2B purchasing group platform, designed and implemented a Kubernetes-based delivery pipeline with automated upgrades and zero-downtime deployments, reducing deployment-related downtime by around <strong>80%</strong>.</li>
                         </ul>
                     </div>
 
@@ -526,12 +542,12 @@
                         <div class="job-title">Managing Partner / Lead Backend &amp; DevOps — Codebuds</div>
                         <div class="job-meta">2019 – 2025 · Bordeaux, France</div>
                         <ul>
-                            <li>Designed and developed web applications in PHP/Symfony (APIs, back-office, external integrations).</li>
-                            <li>Worked closely with frontend teams (Vue.js, Angular) to define clear API contracts and stable interfaces.</li>
-                            <li>Mentored backend/DevOps developers: pair programming, code reviews, best practice guidance.</li>
-                            <li>Defined architectures and technical roadmaps based on client needs.</li>
-                            <li>Set up development environments and CI/CD pipelines (Docker, Kubernetes, GitLab CI/CD) to secure releases.</li>
-                            <li>Key projects: refactoring a legacy e-commerce monolith towards a more modular architecture on AWS, deploying a B2B on-prem SaaS with high stability requirements.</li>
+                            <li>Co-founder and technical lead, responsible for building and evolving the technical foundation (stack, tooling, CI/CD, standards) over <strong>5 years</strong>.</li>
+                            <li>Led the technical delivery of <strong>10+ client projects</strong> (B2B, B2C, SaaS), with a focus on backend architecture, code quality and stable releases.</li>
+                            <li>Developed and maintained Symfony backends, integrated third-party services (payments, CRM, messaging, automation) and optimised performance.</li>
+                            <li>Set up standardised Docker-based dev environments and full CI/CD pipelines (dev → staging → prod), significantly reducing production regressions.</li>
+                            <li>Mentored apprentices and junior developers (pair programming, code reviews, technical workshops) and supported the team’s growth up to <strong>9 people</strong>.</li>
+                            <li>Taught <strong>Docker, Linux and Kubernetes</strong> to over <strong>400 students</strong> in engineering schools, and contributed to projects generating more than <strong>€400k in yearly revenue</strong>.</li>
                         </ul>
                     </div>
 
@@ -539,9 +555,9 @@
                         <div class="job-title">Web Developer — Kaizen Developments</div>
                         <div class="job-meta">2017 – 2019 · Bordeaux, France</div>
                         <ul>
-                            <li>Developed a full Symfony-based web application (backend, data model, integrations).</li>
-                            <li>Worked closely with frontend to deliver consistent features and UX.</li>
-                            <li>Introduced Docker to standardise local development environments.</li>
+                            <li>Built a complete Symfony-based business application (data model, business logic, internal APIs) used daily by client teams.</li>
+                            <li>Collaborated closely with frontend developers to define API contracts and ship cohesive user-facing features.</li>
+                            <li>Introduced Docker and progressively improved the codebase (targeted refactors, optimisation of heavy SQL queries).</li>
                         </ul>
                     </div>
                 </section>
@@ -561,18 +577,21 @@
                 </section>
 
                 <section class="section">
-                    <h2>Education</h2>
-                    <p><strong>Ingésup (Ynov)</strong> — Expert in IT (2015–2019)</p>
-                    <p><strong>SUPINFO</strong> — IT (2014–2015)</p>
-                    <p><strong>Open Universiteit Amsterdam</strong> — IT (2012–2014)</p>
-                </section>
-
-                <section class="section">
-                    <h2>Languages</h2>
-                    <div class="lang-list">
-                        <span>French — fluent</span>
-                        <span>English — fluent</span>
-                        <span>Dutch — native</span>
+                    <div class="inline-columns">
+                        <div>
+                            <h2>Education</h2>
+                            <p><strong>Ingésup (Ynov)</strong> — Expert in IT (2015–2019)</p>
+                            <p><strong>SUPINFO</strong> — IT (2014–2015)</p>
+                            <p><strong>Open Universiteit Amsterdam</strong> — IT (2012–2014)</p>
+                        </div>
+                        <div>
+                            <h2>Languages</h2>
+                            <div class="lang-list">
+                                <span>French — fluent</span>
+                                <span>English — fluent</span>
+                                <span>Dutch — native</span>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
