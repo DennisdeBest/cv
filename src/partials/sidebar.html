@@ -1,0 +1,16 @@
+<div class="sidebar">
+    <section class="section">
+        <h2>{{sections.education}}</h2>
+        {{#each education}}
+        <p><strong>{{this.label}}</strong> — {{this.detail}}</p>
+        {{/each}}
+    </section>
+    <section class="section">
+        <h2>{{sections.languages}}</h2>
+        <div class="lang-list">
+            {{#each languages}}
+            <span>{{this}}</span>
+            {{/each}}
+        </div>
+    </section>
+</div>

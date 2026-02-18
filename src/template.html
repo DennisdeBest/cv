@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Dennis de Best - CV</title>
+    <meta name="description" content="CV of Dennis de Best — Senior Backend Engineer specialising in Symfony, DevOps and cloud infrastructure."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+{{CSS}}
+    </style>
+</head>
+<body>
+<div class="page">
+    <nav class="top-bar" aria-label="CV controls">
+        <div class="controls" role="group" aria-label="Language selection">
+            <button id="btn-fr" aria-label="Afficher en français">FR</button>
+            <button id="btn-en" aria-label="Show in English">EN</button>
+        </div>
+        <button id="btn-print" class="primary" aria-label="Download as PDF">Download as PDF</button>
+    </nav>
+
+    <main>
+        <!-- FR CV -->
+        <div id="cv-fr" class="cv-lang" lang="fr">
+{{CV_FR}}
+        </div>
+
+        <!-- EN CV -->
+        <div id="cv-en" class="cv-lang" lang="en">
+{{CV_EN}}
+        </div>
+    </main>
+</div>
+
+<script>
+{{JS}}
+</script>
+
+</body>
+</html>

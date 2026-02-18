@@ -1,0 +1,128 @@
+name: "Dennis de Best"
+title: "Senior Backend Engineer"
+location: "Bordeaux, France"
+email: "dennis@debest.fr"
+phone: "+33629703682"
+linkedin: "linkedin.com/in/dennisdebest"
+website: "debest.fr"
+avatar: "me.jpeg"
+
+summary: |
+  Développeur backend avec <strong>plus de 8 ans</strong> d'expérience, passionné par l'open-source,
+  l'architecture propre et la mise en place de fondations techniques qui rendent les équipes plus efficaces.
+  J'aime construire des pipelines de livraison solides, simplifier les workflows et créer des environnements
+  fiables où développement et production se comportent de la même manière.
+  Je m'adapte rapidement à de nouvelles stacks, équipes ou domaines — que ce soit en rejoignant un projet
+  existant ou en structurant un nouveau, je me concentre sur rendre les choses plus claires, plus fluides
+  et plus faciles à maintenir.
+
+experience:
+  - title: "Consultant Back-End / Lead Developer — umake"
+    meta: "2024 – Aujourd'hui · Bordeaux, France"
+    tagline: "Grand groupe télécom, plateforme SaaS, plateforme B2B, réseau européen de campings."
+    items:
+      - |
+        Conception d'un environnement de livraison multi-tenant avec Argo CD, permettant
+        des <strong>releases plus sûres</strong> et une <strong>isolation stricte des environnements</strong>.
+      - |
+        Optimisation d'un système Drupal à forte latence en externalisant les fonctionnalités clés,
+        aboutissant à des <strong>réponses plus rapides</strong> et une <strong>meilleure stabilité</strong>.
+      - |
+        Standardisation du développement avec un workflow conteneurisé unifié, offrant
+        une <strong>parité production</strong> et des <strong>déploiements sans interruption</strong>.
+      - |
+        Amélioration de l'efficacité de livraison grâce à des processus CI/CD optimisés et de l'outillage interne,
+        aboutissant à des <strong>pipelines plus rapides</strong> et des <strong>déploiements plus fiables</strong>.
+    tech:
+      - PHP 8
+      - Symfony 6/7
+      - Go
+      - GitLab CI
+      - Docker
+      - K3S/K8S
+      - Helm
+      - PostgreSQL
+      - Redis
+      - AWS
+
+  - title: "Managing Partner / Lead Backend & DevOps — Codebuds"
+    meta: "2019 – 2025 · Bordeaux, France"
+    items:
+      - |
+        Co-fondateur de l'entreprise et définition de sa direction technique, établissant
+        <strong>une base d'ingénierie scalable et cohérente</strong>.
+      - |
+        Supervision de la livraison de <strong>plus de 10 plateformes clients</strong>, garantissant
+        une <strong>architecture robuste</strong> et des <strong>releases fiables</strong>.
+      - |
+        Construction et amélioration de systèmes backend, apportant de <strong>meilleures performances</strong>
+        et des <strong>intégrations plus fluides</strong> entre plusieurs services.
+      - |
+        Introduction d'environnements Docker standardisés et de pipelines CI/CD, aboutissant à
+        <strong>moins de régressions</strong> et des <strong>déploiements plus prévisibles</strong>.
+      - |
+        Encadrement d'alternants et de juniors, accompagnant la croissance de l'équipe jusqu'à
+        <strong>9 ingénieurs</strong> grâce à un suivi structuré et des revues de code.
+      - |
+        Enseignement de Docker, Linux et Kubernetes à <strong>plus de 400 étudiants</strong>, contribuant
+        à des projets générant <strong>plus de 400k€ de CA annuel</strong>.
+    tech:
+      - Symfony 5/6
+      - Docker
+      - GitLab CI
+      - Ansible
+      - Nginx
+      - PostgreSQL/MariaDB
+      - Redis
+      - RabbitMQ
+      - Vue.js
+
+  - title: "Développeur Web — Kaizen Developments"
+    meta: "2017 – 2019 · Bordeaux, France"
+    items:
+      - |
+        Construction d'une application métier Symfony complète, offrant
+        des <strong>workflows stables</strong> et un <strong>outillage interne fiable</strong>.
+      - |
+        Collaboration avec les équipes frontend pour affiner les contrats d'API, garantissant
+        des <strong>interfaces claires</strong> et des <strong>parcours utilisateurs plus fluides</strong>.
+      - |
+        Amélioration de la stack de développement par l'adoption de Docker, l'optimisation SQL et du refactoring ciblé,
+        aboutissant à de <strong>meilleures performances</strong> et un <strong>code plus propre</strong>.
+    tech:
+      - Symfony 3/4
+      - MySQL
+      - Docker
+      - jQuery
+      - Bootstrap
+
+education:
+  - label: "Ingésup (Ynov)"
+    detail: "Expert Informatique (2015–2019)"
+  - label: "SUPINFO"
+    detail: "Informatique (2014–2015)"
+  - label: "Open Universiteit Amsterdam"
+    detail: "Technologies de l'information (2012–2014)"
+
+languages:
+  - "Français — courant"
+  - "Anglais — courant"
+  - "Néerlandais — natif"
+
+personal_projects:
+  - |
+    Construction d'un setup Synology + stockage S3-compatible RustFS avec sauvegardes chiffrées automatisées, offrant
+    un <strong>stockage résilient</strong> et un <strong>monitoring centralisé</strong>.
+  - |
+    Conception d'une stack IA locale avec Ollama et n8n, permettant
+    des <strong>agents autonomes</strong> et de l'<strong>automatisation de workflows personnalisée</strong>.
+  - |
+    Création de systèmes d'automatisation de bout en bout avec GitLab CI, outillage Bash et webhooks, fournissant
+    des <strong>pipelines entièrement autonomes</strong> pour des projets personnels et techniques.
+
+sections:
+  summary: "Profil"
+  experience: "Expérience"
+  education: "Formation"
+  languages: "Langues"
+  personal_projects: "Projets personnels"

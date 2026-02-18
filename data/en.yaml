@@ -1,0 +1,131 @@
+name: "Dennis de Best"
+title: "Senior Backend Engineer"
+location: "Bordeaux, France"
+email: "dennis@debest.fr"
+phone: "+33629703682"
+linkedin: "linkedin.com/in/dennisdebest"
+website: "debest.fr"
+avatar: "me.jpeg"
+
+summary: |
+  Backend developer with <strong>8+ years</strong> of experience, passionate about open-source,
+  clean
+  architecture and building technical foundations that make teams more effective. I enjoy setting
+  up
+  strong delivery pipelines, simplifying workflows and creating reliable environments where
+  development
+  and production behave the same.
+  I adapt quickly to new stacks, teams or domains — whether joining an existing project or
+  structuring
+  a new one, I focus on making things clearer, smoother and easier to maintain.
+
+experience:
+  - title: "Backend / Lead Developer — umake"
+    meta: "2024 – Present · Bordeaux, France"
+    tagline: "Large telecom group, SaaS platform, B2B platform, European camping network."
+    items:
+      - |
+        Designed a multi-tenant delivery setup with Argo CD, enabling
+        <strong>safer releases</strong> and <strong>strict environment isolation</strong>.
+      - |
+        Streamlined a latency-heavy Drupal system by externalising key features,
+        resulting in <strong>faster responses</strong> and <strong>greater stability</strong>.
+      - |
+        Standardised development with a unified container workflow, delivering
+        <strong>production parity</strong> and <strong>zero-downtime deployments</strong>.
+      - |
+        Improved delivery efficiency with refined CI/CD processes and internal tooling,
+        achieving <strong>quicker pipelines</strong> and <strong>more reliable deployments</strong>.
+    tech:
+      - PHP 8
+      - Symfony 6/7
+      - Go
+      - GitLab CI
+      - Docker
+      - K3S/K8S
+      - Helm
+      - PostgreSQL
+      - Redis
+      - AWS
+
+  - title: "Managing Partner / Lead Backend & DevOps — Codebuds"
+    meta: "2019 – 2025 · Bordeaux, France"
+    items:
+      - |
+        Co-founded the company and defined its technical direction, establishing
+        <strong>a scalable and consistent engineering foundation</strong>.
+      - |
+        Oversaw the delivery of <strong>10+ client platforms</strong>, ensuring
+        <strong>robust architecture</strong> and <strong>reliable releases</strong>.
+      - |
+        Built and improved backend systems, driving <strong>better performance</strong>
+        and <strong>smoother integrations</strong> across multiple services.
+      - |
+        Introduced standardised Docker environments and CI/CD pipelines, leading to
+        <strong>fewer regressions</strong> and <strong>more predictable deployments</strong>.
+      - |
+        Mentored apprentices and juniors, helping the team grow to
+        <strong>9 engineers</strong> through structured guidance and reviews.
+      - |
+        Taught Docker, Linux and Kubernetes to <strong>400+ students</strong>, contributing
+        to projects generating <strong>€400k+ annual revenue</strong>.
+    tech:
+      - Symfony 5/6
+      - Docker
+      - GitLab CI
+      - Ansible
+      - Nginx
+      - PostgreSQL/MariaDB
+      - Redis
+      - RabbitMQ
+      - Vue.js
+
+  - title: "Web Developer — Kaizen Developments"
+    meta: "2017 – 2019 · Bordeaux, France"
+    items:
+      - |
+        Built a full Symfony business application, delivering
+        <strong>stable workflows</strong> and <strong>reliable internal tooling</strong>.
+      - |
+        Collaborated with frontend teams to refine API contracts, ensuring
+        <strong>clear interfaces</strong> and <strong>smoother user flows</strong>.
+      - |
+        Improved the development stack through Docker adoption, SQL optimisation and targeted refactoring,
+        resulting in <strong>better performance</strong> and <strong>cleaner code</strong>.
+    tech:
+      - Symfony 3/4
+      - MySQL
+      - Docker
+      - jQuery
+      - Bootstrap
+
+education:
+  - label: "Ingésup (Ynov)"
+    detail: "Expert in IT (2015–2019)"
+  - label: "SUPINFO"
+    detail: "IT (2014–2015)"
+  - label: "Open Universiteit Amsterdam"
+    detail: "IT (2012–2014)"
+
+languages:
+  - "French — fluent"
+  - "English — fluent"
+  - "Dutch — native"
+
+personal_projects:
+  - |
+    Built a Synology + RustFS S3-compatible storage setup with automated encrypted backups, providing
+    <strong>resilient storage</strong> and <strong>centralised monitoring</strong>.
+  - |
+    Designed a local AI stack using Ollama and n8n, enabling
+    <strong>autonomous agents</strong> and <strong>custom workflow automation</strong>.
+  - |
+    Created end-to-end automation systems with GitLab CI, Bash tooling and webhooks, delivering
+    <strong>fully self-running pipelines</strong> for personal and technical projects.
+
+sections:
+  summary: "Summary"
+  experience: "Experience"
+  education: "Education"
+  languages: "Languages"
+  personal_projects: "Personal Projects"
