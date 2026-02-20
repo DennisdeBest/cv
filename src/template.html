@@ -12,6 +12,15 @@
 <body>
 <div class="page">
     <nav class="top-bar" aria-label="CV controls">
+        <div class="theme-picker">
+            <button id="btn-theme" aria-haspopup="listbox" aria-expanded="false" aria-label="Change theme">Theme ▾</button>
+            <ul role="listbox" id="theme-menu" class="theme-menu" hidden aria-label="Theme">
+                <li role="option" data-theme="light" aria-selected="true"><span class="theme-swatch" style="background:#fff;border-color:#2563eb"></span>Light</li>
+                <li role="option" data-theme="dark" aria-selected="false"><span class="theme-swatch" style="background:#1e293b;border-color:#60a5fa"></span>Dark</li>
+                <li role="option" data-theme="orange-light" aria-selected="false"><span class="theme-swatch" style="background:#fff7ed;border-color:#ea580c"></span>Orange Light</li>
+                <li role="option" data-theme="orange-dark" aria-selected="false"><span class="theme-swatch" style="background:#2c1003;border-color:#fb923c"></span>Orange Dark</li>
+            </ul>
+        </div>
         <div class="controls" role="group" aria-label="Language selection">
             <button id="btn-fr" aria-label="Afficher en français">FR</button>
             <button id="btn-en" aria-label="Show in English">EN</button>
