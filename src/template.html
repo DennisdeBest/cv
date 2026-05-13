@@ -21,15 +21,18 @@
                 <li role="option" data-theme="orange-dark" aria-selected="false"><span class="theme-swatch" style="background:#2c1003;border-color:#fb923c"></span>Orange Dark</li>
             </ul>
         </div>
-        <div class="controls" role="group" aria-label="CV type">
-            <button id="btn-dev" aria-label="Backend / Dev CV">Dev</button>
-            <button id="btn-devops" aria-label="DevOps / Infra CV">DevOps</button>
+        <div class="cv-picker">
+            <button id="btn-cv" aria-haspopup="listbox" aria-expanded="false" aria-label="Change CV type">Dev ▾</button>
+            <ul role="listbox" id="cv-menu" class="theme-menu" hidden aria-label="CV type">
+                <li role="option" data-cv="dev" aria-selected="true">Backend / Dev</li>
+                <li role="option" data-cv="devops" aria-selected="false">DevOps / Infra</li>
+            </ul>
         </div>
         <div class="controls" role="group" aria-label="Language selection">
             <button id="btn-fr" aria-label="Afficher en français">FR</button>
             <button id="btn-en" aria-label="Show in English">EN</button>
         </div>
-        <button id="btn-print" class="primary" aria-label="Download as PDF">Download as PDF</button>
+        <button id="btn-print" class="primary" aria-label="Download as PDF">PDF</button>
     </nav>
 
     <main>

@@ -1,10 +1,9 @@
 const btnFr = document.getElementById('btn-fr')!;
 const btnEn = document.getElementById('btn-en')!;
-const btnDev = document.getElementById('btn-dev')!;
-const btnDevops = document.getElementById('btn-devops')!;
 const btnPrint = document.getElementById('btn-print')!;
 
 const CV_IDS = ['cv-en-dev', 'cv-fr-dev', 'cv-en-devops', 'cv-fr-devops'];
+const CV_LABELS: Record<string, string> = { dev: 'Dev', devops: 'DevOps' };
 
 let currentLang = 'en';
 let currentType = 'dev';
@@ -34,8 +33,11 @@ function applyState(): void {
 
     btnFr.setAttribute('aria-pressed', String(currentLang === 'fr'));
     btnEn.setAttribute('aria-pressed', String(currentLang === 'en'));
-    btnDev.setAttribute('aria-pressed', String(currentType === 'dev'));
-    btnDevops.setAttribute('aria-pressed', String(currentType === 'devops'));
+
+    btnCv.textContent = CV_LABELS[currentType] + ' ▾';
+    cvMenu.querySelectorAll<HTMLElement>('li[data-cv]').forEach(li => {
+        li.setAttribute('aria-selected', String(li.dataset.cv === currentType));
+    });
 
     updateUrl();
 }
@@ -54,19 +56,32 @@ function setCvType(type: string): void {
 
 btnFr.addEventListener('click', () => setLang('fr'));
 btnEn.addEventListener('click', () => setLang('en'));
-btnDev.addEventListener('click', () => setCvType('dev'));
-btnDevops.addEventListener('click', () => setCvType('devops'));
 btnPrint.addEventListener('click', () => window.print());
 
-currentLang = getParam('lang')
-    ?? localStorage.getItem('cv-lang')
-    ?? (navigator.language.startsWith('fr') ? 'fr' : 'en');
-currentType = getParam('cv')
-    ?? localStorage.getItem('cv-type')
-    ?? 'dev';
-applyState();
+// CV type picker
+const btnCv = document.getElementById('btn-cv')!;
+const cvMenu = document.getElementById('cv-menu')!;
 
-// Theme switcher
+function toggleCvMenu(open?: boolean): void {
+    const isOpen = open ?? cvMenu.hidden;
+    cvMenu.hidden = !isOpen;
+    btnCv.setAttribute('aria-expanded', String(isOpen));
+}
+
+btnCv.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleCvMenu();
+});
+
+cvMenu.addEventListener('click', (e) => {
+    const li = (e.target as Element).closest<HTMLElement>('li[data-cv]');
+    if (li?.dataset.cv) {
+        setCvType(li.dataset.cv);
+        toggleCvMenu(false);
+    }
+});
+
+// Theme picker
 const btnTheme = document.getElementById('btn-theme')!;
 const themeMenu = document.getElementById('theme-menu')!;
 
@@ -100,9 +115,19 @@ themeMenu.addEventListener('click', (e) => {
 
 document.addEventListener('click', () => {
     if (!themeMenu.hidden) toggleThemeMenu(false);
+    if (!cvMenu.hidden) toggleCvMenu(false);
 });
+
+// Initialise from URL params → localStorage → defaults
+currentLang = getParam('lang')
+    ?? localStorage.getItem('cv-lang')
+    ?? (navigator.language.startsWith('fr') ? 'fr' : 'en');
+currentType = getParam('cv')
+    ?? localStorage.getItem('cv-type')
+    ?? 'dev';
 
 const savedTheme = getParam('theme')
     ?? localStorage.getItem('cv-theme')
     ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 setTheme(savedTheme);
+applyState();
