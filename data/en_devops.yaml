@@ -1,0 +1,136 @@
+name: "Dennis de Best"
+title: "Senior Backend & DevOps Engineer"
+location: "Bordeaux, France"
+email: "dennis@debest.fr"
+phone: "+33629703682"
+linkedin: "linkedin.com/in/dennisdebest"
+website: "debest.fr"
+avatar: "me.jpeg"
+
+summary: |
+  Backend & DevOps engineer with <strong>9+ years</strong> of experience operating production
+  infrastructure. I work across Kubernetes cluster management, GitOps with Argo CD and Flux CD,
+  identity and access management with Keycloak, and helping development teams ship independently
+  across self-hosted and multi-tenant environments.
+
+experience:
+  - title: "Lead Backend & DevOps — umake"
+    meta: "2024 – Present · Bordeaux, France"
+    tagline: "Large telecom group, SaaS platform, B2B platform, European camping network."
+    items:
+      - |
+        Designed and operated a <strong>multi-tenant GitOps platform</strong> using Argo CD for
+        application delivery and Flux CD for infrastructure components (databases, shared services),
+        keeping infrastructure resources like logs, configmaps and secrets out of the Argo CD
+        interface and away from developers.
+      - |
+        Managed day-to-day <strong>Kubernetes cluster operations</strong>, covering workload
+        scheduling, resource tuning, rolling updates and incident response with kubectl and Helm.
+      - |
+        Drove <strong>developer enablement</strong> by onboarding engineers to DevOps practices:
+        writing runbooks, leading workshops and building internal tooling so teams could
+        operate and deploy their own services independently.
+      - |
+        Deployed and administered <strong>Keycloak</strong> for centralised identity and
+        <strong>RBAC</strong> across services and environments, integrating SSO for internal
+        and client-facing applications.
+      - |
+        Refined CI/CD pipelines and container workflows to achieve
+        <strong>zero-downtime deployments</strong> and <strong>production-parity environments</strong>
+        across all teams.
+    tech:
+      - ArgoCD
+      - FluxCD
+      - K3S/K8S
+      - Helm
+      - Keycloak
+      - GitLab CI
+      - Docker
+      - PHP 8
+      - Go
+      - PostgreSQL
+      - Redis
+      - AWS
+
+  - title: "Managing Partner / Lead Backend & DevOps — Codebuds"
+    meta: "2019 – 2025 · Bordeaux, France"
+    items:
+      - |
+        Co-founded the company and led all infrastructure decisions, building the technical
+        foundation on <strong>self-hosted Debian servers</strong> from bare metal provisioning
+        to production-ready configuration.
+      - |
+        Installed and administered a <strong>self-hosted GitLab instance</strong>, covering
+        upgrades, backup strategy, runner management and access control for the entire
+        engineering team.
+      - |
+        Designed and maintained <strong>GitLab CI/CD pipelines</strong> for 10+ client projects,
+        standardising build, test and deployment stages across all repositories.
+      - |
+        Configured and managed <strong>Linux workstations</strong> for the team, covering OS
+        provisioning, toolchain setup, SSH hardening and network configuration.
+      - |
+        Mentored apprentices and junior engineers on Linux, Docker and CI/CD, growing the
+        team to <strong>9 engineers</strong>; taught Docker, Linux and Kubernetes to
+        <strong>400+ students</strong>.
+    tech:
+      - Debian
+      - GitLab
+      - GitLab CI
+      - Docker
+      - Ansible
+      - Nginx
+      - Linux
+      - PostgreSQL/MariaDB
+      - Redis
+      - RabbitMQ
+
+  - title: "Web Developer — Kaizen Developments"
+    meta: "2017 – 2019 · Bordeaux, France"
+    items:
+      - |
+        Built a full Symfony business application, delivering
+        <strong>stable workflows</strong> and <strong>reliable internal tooling</strong>.
+      - |
+        Improved the development stack through Docker adoption, SQL optimisation and targeted
+        refactoring, resulting in <strong>better performance</strong> and <strong>cleaner code</strong>.
+      - |
+        Collaborated with frontend teams to refine API contracts, ensuring
+        <strong>clear interfaces</strong> and <strong>smoother user flows</strong>.
+    tech:
+      - Symfony 3/4
+      - MySQL
+      - Docker
+      - jQuery
+      - Bootstrap
+
+education:
+  - label: "Ingésup (Ynov)"
+    detail: "Expert in IT (2015–2019)"
+  - label: "SUPINFO"
+    detail: "IT (2014–2015)"
+  - label: "Open Universiteit Amsterdam"
+    detail: "IT (2012–2014)"
+
+languages:
+  - "French — fluent"
+  - "English — fluent"
+  - "Dutch — native"
+
+personal_projects:
+  - |
+    Built a Synology + RustFS S3-compatible storage setup with automated encrypted backups, providing
+    <strong>resilient storage</strong> and <strong>centralised monitoring</strong>.
+  - |
+    Designed a local AI stack using Ollama and n8n, enabling
+    <strong>autonomous agents</strong> and <strong>custom workflow automation</strong>.
+  - |
+    Created end-to-end automation systems with GitLab CI, Bash tooling and webhooks, delivering
+    <strong>fully self-running pipelines</strong> for personal and technical projects.
+
+sections:
+  summary: "Summary"
+  experience: "Experience"
+  education: "Education"
+  languages: "Languages"
+  personal_projects: "Personal Projects"

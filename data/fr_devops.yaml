@@ -1,0 +1,136 @@
+name: "Dennis de Best"
+title: "Ingénieur Backend & DevOps Senior"
+location: "Bordeaux, France"
+email: "dennis@debest.fr"
+phone: "+33629703682"
+linkedin: "linkedin.com/in/dennisdebest"
+website: "debest.fr"
+avatar: "me.jpeg"
+
+summary: |
+  Ingénieur Backend & DevOps avec <strong>plus de 9 ans</strong> d'expérience dans l'exploitation
+  d'infrastructures de production. Je travaille sur la gestion de clusters Kubernetes, les workflows
+  GitOps avec Argo CD et Flux CD, la gestion des identités avec Keycloak, et j'accompagne les équipes
+  à livrer de façon autonome sur des environnements auto-hébergés.
+
+experience:
+  - title: "Lead Backend & DevOps — umake"
+    meta: "2024 – Aujourd'hui · Bordeaux, France"
+    tagline: "Grand groupe télécom, plateforme SaaS, plateforme B2B, réseau européen de campings."
+    items:
+      - |
+        Conception et exploitation d'une <strong>plateforme GitOps multi-tenant</strong> avec Argo CD
+        pour la livraison applicative et Flux CD pour les composants d'infrastructure (bases de données,
+        services partagés), en maintenant les ressources infra comme les logs, configmaps et secrets
+        hors de portée des développeurs dans l'interface Argo CD.
+      - |
+        Gestion quotidienne des <strong>opérations cluster Kubernetes</strong>, de l'ordonnancement
+        des workloads et de l'ajustement des ressources à la réponse aux incidents avec kubectl et Helm.
+      - |
+        Pilotage de <strong>l'autonomie DevOps des développeurs</strong> : onboarding aux pratiques DevOps,
+        rédaction de runbooks, animation d'ateliers et création d'outillage interne pour que les équipes
+        puissent opérer et déployer leurs services de façon indépendante.
+      - |
+        Déploiement et administration de <strong>Keycloak</strong> pour la gestion centralisée des identités
+        et du <strong>RBAC</strong> sur l'ensemble des services et environnements, avec intégration SSO
+        pour les applications internes et clients.
+      - |
+        Optimisation des pipelines CI/CD et des workflows conteneurisés pour atteindre
+        des <strong>déploiements sans interruption</strong> et une <strong>parité production</strong>
+        dans toutes les équipes.
+    tech:
+      - ArgoCD
+      - FluxCD
+      - K3S/K8S
+      - Helm
+      - Keycloak
+      - GitLab CI
+      - Docker
+      - PHP 8
+      - Go
+      - PostgreSQL
+      - Redis
+      - AWS
+
+  - title: "Managing Partner / Lead Backend & DevOps — Codebuds"
+    meta: "2019 – 2025 · Bordeaux, France"
+    items:
+      - |
+        Co-fondateur de l'entreprise et responsable de toutes les décisions d'infrastructure,
+        en construisant la fondation technique sur des <strong>serveurs Debian auto-hébergés</strong>,
+        du provisioning bare metal à la configuration production.
+      - |
+        Installation et administration d'une <strong>instance GitLab auto-hébergée</strong>, couvrant
+        les mises à jour, la stratégie de backup, la gestion des runners et le contrôle d'accès
+        pour toute l'équipe d'ingénierie.
+      - |
+        Conception et maintenance de <strong>pipelines GitLab CI/CD</strong> pour plus de 10 projets clients,
+        en standardisant les étapes de build, test et déploiement sur l'ensemble des dépôts.
+      - |
+        Configuration et gestion des <strong>postes de travail Linux</strong> de l'équipe, du
+        provisioning OS au durcissement SSH en passant par la chaîne d'outils et la configuration réseau.
+      - |
+        Encadrement d'alternants et de juniors sur Linux, Docker et CI/CD, accompagnant la croissance
+        de l'équipe jusqu'à <strong>9 ingénieurs</strong> ; enseignement de Docker, Linux et Kubernetes
+        à <strong>plus de 400 étudiants</strong>.
+    tech:
+      - Debian
+      - GitLab
+      - GitLab CI
+      - Docker
+      - Ansible
+      - Nginx
+      - Linux
+      - PostgreSQL/MariaDB
+      - Redis
+      - RabbitMQ
+
+  - title: "Développeur Web — Kaizen Developments"
+    meta: "2017 – 2019 · Bordeaux, France"
+    items:
+      - |
+        Construction d'une application métier Symfony complète, offrant
+        des <strong>workflows stables</strong> et un <strong>outillage interne fiable</strong>.
+      - |
+        Amélioration de la stack de développement par l'adoption de Docker, l'optimisation SQL et du
+        refactoring ciblé, aboutissant à de <strong>meilleures performances</strong> et un <strong>code plus propre</strong>.
+      - |
+        Collaboration avec les équipes frontend pour affiner les contrats d'API, garantissant
+        des <strong>interfaces claires</strong> et des <strong>parcours utilisateurs plus fluides</strong>.
+    tech:
+      - Symfony 3/4
+      - MySQL
+      - Docker
+      - jQuery
+      - Bootstrap
+
+education:
+  - label: "Ingésup (Ynov)"
+    detail: "Expert Informatique (2015–2019)"
+  - label: "SUPINFO"
+    detail: "Informatique (2014–2015)"
+  - label: "Open Universiteit Amsterdam"
+    detail: "Technologies de l'information (2012–2014)"
+
+languages:
+  - "Français — courant"
+  - "Anglais — courant"
+  - "Néerlandais — natif"
+
+personal_projects:
+  - |
+    Construction d'un setup Synology + stockage S3-compatible RustFS avec sauvegardes chiffrées automatisées, offrant
+    un <strong>stockage résilient</strong> et un <strong>monitoring centralisé</strong>.
+  - |
+    Conception d'une stack IA locale avec Ollama et n8n, permettant
+    des <strong>agents autonomes</strong> et de l'<strong>automatisation de workflows personnalisée</strong>.
+  - |
+    Création de systèmes d'automatisation de bout en bout avec GitLab CI, outillage Bash et webhooks, fournissant
+    des <strong>pipelines entièrement autonomes</strong> pour des projets personnels et techniques.
+
+sections:
+  summary: "Profil"
+  experience: "Expérience"
+  education: "Formation"
+  languages: "Langues"
+  personal_projects: "Projets personnels"

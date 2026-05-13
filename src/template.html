@@ -21,6 +21,10 @@
                 <li role="option" data-theme="orange-dark" aria-selected="false"><span class="theme-swatch" style="background:#2c1003;border-color:#fb923c"></span>Orange Dark</li>
             </ul>
         </div>
+        <div class="controls" role="group" aria-label="CV type">
+            <button id="btn-dev" aria-label="Backend / Dev CV">Dev</button>
+            <button id="btn-devops" aria-label="DevOps / Infra CV">DevOps</button>
+        </div>
         <div class="controls" role="group" aria-label="Language selection">
             <button id="btn-fr" aria-label="Afficher en français">FR</button>
             <button id="btn-en" aria-label="Show in English">EN</button>
@@ -29,14 +33,17 @@
     </nav>
 
     <main>
-        <!-- FR CV -->
-        <div id="cv-fr" class="cv-lang" lang="fr">
-{{CV_FR}}
+        <div id="cv-en-dev" class="cv-lang" lang="en">
+{{CV_EN_DEV}}
         </div>
-
-        <!-- EN CV -->
-        <div id="cv-en" class="cv-lang" lang="en">
-{{CV_EN}}
+        <div id="cv-fr-dev" class="cv-lang" lang="fr">
+{{CV_FR_DEV}}
+        </div>
+        <div id="cv-en-devops" class="cv-lang" lang="en">
+{{CV_EN_DEVOPS}}
+        </div>
+        <div id="cv-fr-devops" class="cv-lang" lang="fr">
+{{CV_FR_DEVOPS}}
         </div>
     </main>
 </div>

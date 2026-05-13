@@ -1,36 +1,72 @@
-const btnFr = document.getElementById('btn-fr');
-const btnEn = document.getElementById('btn-en');
-const btnPrint = document.getElementById('btn-print');
-const cvFr = document.getElementById('cv-fr');
-const cvEn = document.getElementById('cv-en');
+const btnFr = document.getElementById('btn-fr')!;
+const btnEn = document.getElementById('btn-en')!;
+const btnDev = document.getElementById('btn-dev')!;
+const btnDevops = document.getElementById('btn-devops')!;
+const btnPrint = document.getElementById('btn-print')!;
 
-function setLang(lang: string): void {
-    const isFr = lang === 'fr';
-    document.documentElement.lang = lang;
+const CV_IDS = ['cv-en-dev', 'cv-fr-dev', 'cv-en-devops', 'cv-fr-devops'];
 
-    cvFr!.classList.toggle('active', isFr);
-    cvEn!.classList.toggle('active', !isFr);
-    cvFr!.setAttribute('aria-hidden', String(!isFr));
-    cvEn!.setAttribute('aria-hidden', String(isFr));
-    btnFr!.setAttribute('aria-pressed', String(isFr));
-    btnEn!.setAttribute('aria-pressed', String(!isFr));
+let currentLang = 'en';
+let currentType = 'dev';
+
+function getParam(key: string): string | null {
+    return new URLSearchParams(window.location.search).get(key);
 }
 
-btnFr!.addEventListener('click', () => setLang('fr'));
-btnEn!.addEventListener('click', () => setLang('en'));
-btnPrint!.addEventListener('click', () => window.print());
+function updateUrl(): void {
+    const params = new URLSearchParams();
+    params.set('lang', currentLang);
+    params.set('cv', currentType);
+    params.set('theme', document.documentElement.dataset.theme ?? 'light');
+    history.replaceState(null, '', '?' + params.toString());
+}
 
-const prefersFr = navigator.language.startsWith('fr');
-setLang(prefersFr ? 'fr' : 'en');
+function applyState(): void {
+    const activeId = `cv-${currentLang}-${currentType}`;
+    document.documentElement.lang = currentLang;
+
+    CV_IDS.forEach(id => {
+        const el = document.getElementById(id)!;
+        const isActive = id === activeId;
+        el.classList.toggle('active', isActive);
+        el.setAttribute('aria-hidden', String(!isActive));
+    });
+
+    btnFr.setAttribute('aria-pressed', String(currentLang === 'fr'));
+    btnEn.setAttribute('aria-pressed', String(currentLang === 'en'));
+    btnDev.setAttribute('aria-pressed', String(currentType === 'dev'));
+    btnDevops.setAttribute('aria-pressed', String(currentType === 'devops'));
+
+    updateUrl();
+}
+
+function setLang(lang: string): void {
+    currentLang = lang;
+    localStorage.setItem('cv-lang', lang);
+    applyState();
+}
+
+function setCvType(type: string): void {
+    currentType = type;
+    localStorage.setItem('cv-type', type);
+    applyState();
+}
+
+btnFr.addEventListener('click', () => setLang('fr'));
+btnEn.addEventListener('click', () => setLang('en'));
+btnDev.addEventListener('click', () => setCvType('dev'));
+btnDevops.addEventListener('click', () => setCvType('devops'));
+btnPrint.addEventListener('click', () => window.print());
+
+currentLang = getParam('lang')
+    ?? localStorage.getItem('cv-lang')
+    ?? (navigator.language.startsWith('fr') ? 'fr' : 'en');
+currentType = getParam('cv')
+    ?? localStorage.getItem('cv-type')
+    ?? 'dev';
+applyState();
 
 // Theme switcher
-const THEMES: Record<string, string> = {
-    light: 'Light',
-    dark: 'Dark',
-    'orange-light': 'Orange Light',
-    'orange-dark': 'Orange Dark',
-};
-
 const btnTheme = document.getElementById('btn-theme')!;
 const themeMenu = document.getElementById('theme-menu')!;
 
@@ -40,6 +76,7 @@ function setTheme(themeId: string): void {
     themeMenu.querySelectorAll<HTMLElement>('li[data-theme]').forEach(li => {
         li.setAttribute('aria-selected', String(li.dataset.theme === themeId));
     });
+    updateUrl();
 }
 
 function toggleThemeMenu(open?: boolean): void {
@@ -65,6 +102,7 @@ document.addEventListener('click', () => {
     if (!themeMenu.hidden) toggleThemeMenu(false);
 });
 
-const savedTheme = localStorage.getItem('cv-theme')
+const savedTheme = getParam('theme')
+    ?? localStorage.getItem('cv-theme')
     ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 setTheme(savedTheme);
