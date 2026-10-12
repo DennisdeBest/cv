@@ -8,10 +8,11 @@ website: "debest.fr"
 avatar: "me.jpeg"
 
 summary: |
-  Backend & DevOps engineer with <strong>9+ years</strong> of experience operating production
-  infrastructure. I work across Kubernetes cluster management, GitOps with Argo CD and Flux CD,
-  identity and access management with Keycloak, and helping development teams ship independently
-  across self-hosted and multi-tenant environments.
+  Backend & DevOps engineer with <strong>9+ years of development experience</strong>,
+  now specialising in production infrastructure and application delivery.
+  I design and operate Kubernetes environments, GitOps workflows with Argo CD and Flux CD,
+  and identity services with Keycloak. I help developers adopt these tools
+  so they can deploy and operate their services independently.
 
 experience:
   - title: "Lead Backend & DevOps — umake"
@@ -19,25 +20,22 @@ experience:
     tagline: "Large telecom group, SaaS platform, B2B platform, European camping network."
     items:
       - |
-        Designed and operated a <strong>multi-tenant GitOps platform</strong> using Argo CD for
-        application delivery and Flux CD for infrastructure components (databases, shared services),
-        keeping infrastructure resources like logs, configmaps and secrets out of the Argo CD
-        interface and away from developers.
+        Designed and operated a <strong>multi-tenant GitOps platform</strong>: application delivery
+        with Argo CD and infrastructure component management with Flux CD,
+        separating application and infrastructure access in the Argo CD interface.
       - |
         Managed day-to-day <strong>Kubernetes cluster operations</strong>, covering workload
         scheduling, resource tuning, rolling updates and incident response with kubectl and Helm.
       - |
-        Drove <strong>developer enablement</strong> by onboarding engineers to DevOps practices:
-        writing runbooks, leading workshops and building internal tooling so teams could
-        operate and deploy their own services independently.
+        Helped developers become <strong>independent on deployments</strong> through runbooks,
+        workshops and internal tooling for day-to-day operations.
       - |
         Deployed and administered <strong>Keycloak</strong> for centralised identity and
         <strong>RBAC</strong> across services and environments, integrating SSO for internal
         and client-facing applications.
       - |
-        Refined CI/CD pipelines and container workflows to achieve
-        <strong>zero-downtime deployments</strong> and <strong>production-parity environments</strong>
-        across all teams.
+        Standardised <strong>CI/CD pipelines and container environments</strong>
+        to make delivery steps repeatable and align development and production environments.
     tech:
       - ArgoCD
       - FluxCD
@@ -56,9 +54,9 @@ experience:
     meta: "2019 – 2025 · Bordeaux, France"
     items:
       - |
-        Co-founded the company and led all infrastructure decisions, building the technical
-        foundation on <strong>self-hosted Debian servers</strong> from bare metal provisioning
-        to production-ready configuration.
+        Co-founded the company and led infrastructure decisions, setting up
+        <strong>self-hosted Debian servers</strong> from bare metal provisioning
+        to production configuration.
       - |
         Installed and administered a <strong>self-hosted GitLab instance</strong>, covering
         upgrades, backup strategy, runner management and access control for the entire
@@ -70,9 +68,11 @@ experience:
         Configured and managed <strong>Linux workstations</strong> for the team, covering OS
         provisioning, toolchain setup, SSH hardening and network configuration.
       - |
-        Mentored apprentices and junior engineers on Linux, Docker and CI/CD, growing the
-        team to <strong>9 engineers</strong>; taught Docker, Linux and Kubernetes to
-        <strong>400+ students</strong>.
+        Mentored <strong>3 colleagues hired as apprentices</strong> on Linux, Docker and CI/CD,
+        supporting their professional development within a team that reached
+        <strong>9 engineers</strong>.
+      - |
+        Taught Docker, Linux and Kubernetes to <strong>400+ students</strong>.
     tech:
       - Debian
       - GitLab
@@ -89,14 +89,13 @@ experience:
     meta: "2017 – 2019 · Bordeaux, France"
     items:
       - |
-        Built a full Symfony business application, delivering
-        <strong>stable workflows</strong> and <strong>reliable internal tooling</strong>.
+        Developed a <strong>Symfony business application</strong>, covering architecture,
+        backend development and database design.
       - |
-        Improved the development stack through Docker adoption, SQL optimisation and targeted
-        refactoring, resulting in <strong>better performance</strong> and <strong>cleaner code</strong>.
+        Set up <strong>Docker development environments</strong>, optimised SQL
+        and refactored selected parts of the application.
       - |
-        Collaborated with frontend teams to refine API contracts, ensuring
-        <strong>clear interfaces</strong> and <strong>smoother user flows</strong>.
+        Collaborated with frontend teams to define and evolve <strong>API contracts</strong>.
     tech:
       - Symfony 3/4
       - MySQL
@@ -119,14 +118,13 @@ languages:
 
 personal_projects:
   - |
-    Built a Synology + RustFS S3-compatible storage setup with automated encrypted backups, providing
-    <strong>resilient storage</strong> and <strong>centralised monitoring</strong>.
+    Set up Synology + RustFS S3-compatible storage with
+    <strong>automated encrypted backups</strong> and centralised monitoring.
   - |
-    Designed a local AI stack using Ollama and n8n, enabling
-    <strong>autonomous agents</strong> and <strong>custom workflow automation</strong>.
+    Integrated Ollama and n8n in a <strong>local AI stack</strong>
+    to experiment with agents and automate personal workflows.
   - |
-    Created end-to-end automation systems with GitLab CI, Bash tooling and webhooks, delivering
-    <strong>fully self-running pipelines</strong> for personal and technical projects.
+    Automated personal projects with <strong>GitLab CI, Bash and webhooks</strong>.
 
 sections:
   summary: "Summary"

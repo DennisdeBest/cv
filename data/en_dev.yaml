@@ -8,15 +8,11 @@ website: "debest.fr"
 avatar: "me.jpeg"
 
 summary: |
-  Backend developer with <strong>9+ years</strong> of experience, passionate about open-source,
-  clean
-  architecture and building technical foundations that make teams more effective. I enjoy setting
-  up
-  strong delivery pipelines, simplifying workflows and creating reliable environments where
-  development
-  and production behave the same.
-  I adapt quickly to new stacks, teams or domains. Whether joining an existing project or
-  structuring a new one, I focus on making things clearer, smoother and easier to maintain.
+  Backend developer with <strong>9+ years of experience</strong> building business applications,
+  SaaS platforms and integrations. I work mainly with PHP/Symfony, complemented by
+  containerisation, Kubernetes and CI/CD pipelines.
+  I support projects from requirements through production delivery, working with clients
+  and frontend teams, and sharing these practices with junior engineers.
 
 experience:
   - title: "Backend / Lead Developer — umake"
@@ -24,17 +20,17 @@ experience:
     tagline: "Large telecom group, SaaS platform, B2B platform, European camping network."
     items:
       - |
-        Designed a multi-tenant delivery setup with Argo CD, enabling
-        <strong>safer releases</strong> and <strong>strict environment isolation</strong>.
+        Designed a <strong>multi-tenant delivery environment with Argo CD</strong>,
+        separating application and infrastructure access in the interface.
       - |
-        Streamlined a latency-heavy Drupal system by externalising key features,
-        resulting in <strong>faster responses</strong> and <strong>greater stability</strong>.
+        Externalised key features of a <strong>latency-heavy Drupal system</strong>
+        as part of its optimisation.
       - |
-        Standardised development with a unified container workflow, delivering
-        <strong>production parity</strong> and <strong>zero-downtime deployments</strong>.
+        Standardised <strong>container environments</strong> to align
+        development and production configurations.
       - |
-        Improved delivery efficiency with refined CI/CD processes and internal tooling,
-        achieving <strong>quicker pipelines</strong> and <strong>more reliable deployments</strong>.
+        Built <strong>CI/CD pipelines and internal tooling</strong>
+        to automate testing and deployment steps.
     tech:
       - PHP 8
       - Symfony 6/7
@@ -51,23 +47,23 @@ experience:
     meta: "2019 – 2025 · Bordeaux, France"
     items:
       - |
-        Co-founded the company and defined its technical direction, establishing
-        <strong>a scalable and consistent engineering foundation</strong>.
+        Co-founded the company and defined its <strong>technical direction</strong>
+        and development and delivery practices.
       - |
-        Oversaw the delivery of <strong>10+ client platforms</strong>, ensuring
-        <strong>robust architecture</strong> and <strong>reliable releases</strong>.
+        Oversaw delivery of <strong>10+ client platforms</strong> from requirements
+        through production, working with the development team.
       - |
-        Built and improved backend systems, driving <strong>better performance</strong>
-        and <strong>smoother integrations</strong> across multiple services.
+        Developed <strong>backend systems and integrations between services</strong>
+        for client projects.
       - |
-        Introduced standardised Docker environments and CI/CD pipelines, leading to
-        <strong>fewer regressions</strong> and <strong>more predictable deployments</strong>.
+        Introduced <strong>standardised Docker environments and CI/CD pipelines</strong>
+        to make builds, tests and deployments repeatable.
       - |
-        Mentored apprentices and juniors, helping the team grow to
-        <strong>9 engineers</strong> through structured guidance and reviews.
+        Mentored <strong>3 colleagues hired as apprentices</strong> through technical guidance,
+        code reviews and support for their professional development within a team
+        that reached <strong>9 engineers</strong>.
       - |
-        Taught Docker, Linux and Kubernetes to <strong>400+ students</strong>, contributing
-        to projects generating <strong>€400k+ annual revenue</strong>.
+        Taught Docker, Linux and Kubernetes to <strong>400+ students</strong>.
     tech:
       - Symfony 5/6
       - Docker
@@ -83,14 +79,13 @@ experience:
     meta: "2017 – 2019 · Bordeaux, France"
     items:
       - |
-        Built a full Symfony business application, delivering
-        <strong>stable workflows</strong> and <strong>reliable internal tooling</strong>.
+        Developed a <strong>Symfony business application</strong>, covering architecture,
+        backend development and database design.
       - |
-        Collaborated with frontend teams to refine API contracts, ensuring
-        <strong>clear interfaces</strong> and <strong>smoother user flows</strong>.
+        Collaborated with frontend teams to define and evolve <strong>API contracts</strong>.
       - |
-        Improved the development stack through Docker adoption, SQL optimisation and targeted refactoring,
-        resulting in <strong>better performance</strong> and <strong>cleaner code</strong>.
+        Set up <strong>Docker development environments</strong>, optimised SQL
+        and refactored selected parts of the application.
     tech:
       - Symfony 3/4
       - MySQL
@@ -113,14 +108,13 @@ languages:
 
 personal_projects:
   - |
-    Built a Synology + RustFS S3-compatible storage setup with automated encrypted backups, providing
-    <strong>resilient storage</strong> and <strong>centralised monitoring</strong>.
+    Set up Synology + RustFS S3-compatible storage with
+    <strong>automated encrypted backups</strong> and centralised monitoring.
   - |
-    Designed a local AI stack using Ollama and n8n, enabling
-    <strong>autonomous agents</strong> and <strong>custom workflow automation</strong>.
+    Integrated Ollama and n8n in a <strong>local AI stack</strong>
+    to experiment with agents and automate personal workflows.
   - |
-    Created end-to-end automation systems with GitLab CI, Bash tooling and webhooks, delivering
-    <strong>fully self-running pipelines</strong> for personal and technical projects.
+    Automated personal projects with <strong>GitLab CI, Bash and webhooks</strong>.
 
 sections:
   summary: "Summary"

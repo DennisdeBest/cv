@@ -1,5 +1,5 @@
 name: "Dennis de Best"
-title: "Senior Backend Engineer"
+title: "Ingénieur Backend Senior"
 location: "Bordeaux, France"
 email: "dennis@debest.fr"
 phone: "+33629703682"
@@ -8,13 +8,11 @@ website: "debest.fr"
 avatar: "me.jpeg"
 
 summary: |
-  Développeur backend avec <strong>plus de 9 ans</strong> d'expérience, passionné par l'open-source,
-  l'architecture propre et la mise en place de fondations techniques qui rendent les équipes plus efficaces.
-  J'aime construire des pipelines de livraison solides, simplifier les workflows et créer des environnements
-  fiables où développement et production se comportent de la même manière.
-  Je m'adapte rapidement à de nouvelles stacks, équipes ou domaines. Que ce soit en rejoignant un projet
-  existant ou en structurant un nouveau, je me concentre sur rendre les choses plus claires, plus fluides
-  et plus faciles à maintenir.
+  Développeur backend avec <strong>plus de 9 ans d'expérience</strong> en applications métier,
+  plateformes SaaS et intégrations. Je travaille principalement avec PHP/Symfony et complète
+  cette expérience par la conteneurisation, Kubernetes et les pipelines CI/CD.
+  J'accompagne les projets de la définition du besoin à la mise en production,
+  en collaboration avec les clients et les équipes frontend, et je transmets ces pratiques aux juniors.
 
 experience:
   - title: "Consultant Back-End / Lead Developer — umake"
@@ -22,17 +20,17 @@ experience:
     tagline: "Grand groupe télécom, plateforme SaaS, plateforme B2B, réseau européen de campings."
     items:
       - |
-        Conception d'un environnement de livraison multi-tenant avec Argo CD, permettant
-        des <strong>releases plus sûres</strong> et une <strong>isolation stricte des environnements</strong>.
+        Conception d'un <strong>environnement de livraison multi-tenant avec Argo CD</strong>,
+        avec séparation des accès applicatifs et infrastructure dans l'interface.
       - |
-        Optimisation d'un système Drupal à forte latence en externalisant les fonctionnalités clés,
-        aboutissant à des <strong>réponses plus rapides</strong> et une <strong>meilleure stabilité</strong>.
+        Externalisation de fonctionnalités clés d'un <strong>système Drupal à forte latence</strong>
+        dans le cadre de son optimisation.
       - |
-        Standardisation du développement avec un workflow conteneurisé unifié, offrant
-        une <strong>parité production</strong> et des <strong>déploiements sans interruption</strong>.
+        Standardisation des <strong>environnements conteneurisés</strong> pour rapprocher
+        les configurations de développement et de production.
       - |
-        Amélioration de l'efficacité de livraison grâce à des processus CI/CD optimisés et de l'outillage interne,
-        aboutissant à des <strong>pipelines plus rapides</strong> et des <strong>déploiements plus fiables</strong>.
+        Mise en place de <strong>pipelines CI/CD et d'outillage interne</strong>
+        pour automatiser les étapes de test et de déploiement.
     tech:
       - PHP 8
       - Symfony 6/7
@@ -45,27 +43,27 @@ experience:
       - Redis
       - AWS
 
-  - title: "Managing Partner / Lead Backend & DevOps — Codebuds"
+  - title: "Cofondateur / Lead Backend & DevOps — Codebuds"
     meta: "2019 – 2025 · Bordeaux, France"
     items:
       - |
-        Co-fondateur de l'entreprise et définition de sa direction technique, établissant
-        <strong>une base d'ingénierie scalable et cohérente</strong>.
+        Cofondateur de l'entreprise ; définition de la <strong>direction technique</strong>
+        et des pratiques de développement et de livraison.
       - |
-        Supervision de la livraison de <strong>plus de 10 plateformes clients</strong>, garantissant
-        une <strong>architecture robuste</strong> et des <strong>releases fiables</strong>.
+        Supervision de la livraison de <strong>plus de 10 plateformes clients</strong>,
+        de la définition des besoins à la mise en production, avec l'équipe de développement.
       - |
-        Construction et amélioration de systèmes backend, apportant de <strong>meilleures performances</strong>
-        et des <strong>intégrations plus fluides</strong> entre plusieurs services.
+        Développement de <strong>systèmes backend et d'intégrations entre services</strong>
+        pour les projets clients.
       - |
-        Introduction d'environnements Docker standardisés et de pipelines CI/CD, aboutissant à
-        <strong>moins de régressions</strong> et des <strong>déploiements plus prévisibles</strong>.
+        Introduction d'<strong>environnements Docker et de pipelines CI/CD standardisés</strong>
+        pour rendre les builds, tests et déploiements reproductibles.
       - |
-        Encadrement d'alternants et de juniors, accompagnant la croissance de l'équipe jusqu'à
-        <strong>9 ingénieurs</strong> grâce à un suivi structuré et des revues de code.
+        Encadrement de <strong>3 collaborateurs recrutés en alternance</strong> : suivi technique,
+        revues de code et accompagnement de leur progression professionnelle au sein d'une équipe
+        ayant compté <strong>9 ingénieurs</strong>.
       - |
-        Enseignement de Docker, Linux et Kubernetes à <strong>plus de 400 étudiants</strong>, contribuant
-        à des projets générant <strong>plus de 400k€ de CA annuel</strong>.
+        Enseignement de Docker, Linux et Kubernetes à <strong>plus de 400 étudiants</strong>.
     tech:
       - Symfony 5/6
       - Docker
@@ -81,14 +79,14 @@ experience:
     meta: "2017 – 2019 · Bordeaux, France"
     items:
       - |
-        Construction d'une application métier Symfony complète, offrant
-        des <strong>workflows stables</strong> et un <strong>outillage interne fiable</strong>.
+        Développement d'une <strong>application métier Symfony</strong>, de l'architecture
+        au backend et à la conception de la base de données.
       - |
-        Collaboration avec les équipes frontend pour affiner les contrats d'API, garantissant
-        des <strong>interfaces claires</strong> et des <strong>parcours utilisateurs plus fluides</strong>.
+        Collaboration avec les équipes frontend pour définir et faire évoluer les
+        <strong>contrats d'API</strong>.
       - |
-        Amélioration de la stack de développement par l'adoption de Docker, l'optimisation SQL et du refactoring ciblé,
-        aboutissant à de <strong>meilleures performances</strong> et un <strong>code plus propre</strong>.
+        Mise en place d'<strong>environnements de développement Docker</strong>,
+        optimisation SQL et refactoring ciblé de l'application.
     tech:
       - Symfony 3/4
       - MySQL
@@ -111,14 +109,13 @@ languages:
 
 personal_projects:
   - |
-    Construction d'un setup Synology + stockage S3-compatible RustFS avec sauvegardes chiffrées automatisées, offrant
-    un <strong>stockage résilient</strong> et un <strong>monitoring centralisé</strong>.
+    Mise en place d'un stockage Synology + RustFS compatible S3 avec
+    <strong>sauvegardes chiffrées automatisées</strong> et monitoring centralisé.
   - |
-    Conception d'une stack IA locale avec Ollama et n8n, permettant
-    des <strong>agents autonomes</strong> et de l'<strong>automatisation de workflows personnalisée</strong>.
+    Intégration d'Ollama et n8n dans une <strong>stack IA locale</strong>
+    pour expérimenter des agents et automatiser des workflows personnels.
   - |
-    Création de systèmes d'automatisation de bout en bout avec GitLab CI, outillage Bash et webhooks, fournissant
-    des <strong>pipelines entièrement autonomes</strong> pour des projets personnels et techniques.
+    Automatisation de projets personnels avec <strong>GitLab CI, Bash et des webhooks</strong>.
 
 sections:
   summary: "Profil"
